@@ -1,0 +1,15 @@
+site_name: Music Py
+repo_url: https://github.com/DirceuVio/music-py
+repo_name: DirceuVio/music-py
+edit_uri: tree/main/docs
+
+theme:
+  name: material
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
+
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - stylesheets/extra.css
