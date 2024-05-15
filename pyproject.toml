@@ -6,8 +6,13 @@ authors = ["Dirceu Silva <ddasilvajunior@vio.com>"]
 readme = "README.md"
 packages = [{include = "music_py"}]
 
+[tool.poetry.scripts]
+scales = "music_py.cli:app"
+
 [tool.poetry.dependencies]
 python = "^3.9"
+typer = "^0.12.3"
+rich = "^13.7.1"
 
 
 [tool.poetry.group.dev.dependencies]

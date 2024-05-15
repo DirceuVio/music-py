@@ -25,8 +25,8 @@ def scale(tonic: str, tonality: str) -> dict[str : list[str]]:
         {'notes': ['A', 'B', 'C#', 'D', 'E', 'F#', 'G#'], 'degrees': ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII']}
     """
     try:
-        intervals = SCALES[tonality.lower()]
-        tonic_index = NOTES.index(tonic.upper())
+        intervals: str = SCALES[tonality.lower()]
+        tonic_index: str = NOTES.index(tonic.upper())
     except ValueError:
         raise ValueError(
             f'This tonic does not exist. You need to try one of these {NOTES}'
