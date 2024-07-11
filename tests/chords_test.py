@@ -10,6 +10,7 @@ from music_py.chords import chord
         ('Cm', ['C', 'D#', 'G']),
         ('C°', ['C', 'D#', 'F#']),
         ('C+', ['C', 'E', 'G#']),
+        ('Cm+', ['C', 'D#', 'G#']),
         ('F#', ['F#', 'A#', 'C#']),
     ],
 )
