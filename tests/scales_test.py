@@ -1,6 +1,6 @@
 from pytest import mark, raises
 
-from music_py.scale import NOTES, SCALES, scale
+from music_py.scales import NOTES, SCALES, scale
 
 
 def test_works_lowercase():
@@ -20,15 +20,6 @@ def test_return_non_existent_tonic_error():
         f'This tonic does not exist. You need to try one of these {NOTES}'
     )
     with raises(ValueError) as error:
-        scale(tonic, tonality)
-    assert error.value.args[0] == error_message
-
-
-def test_return_non_existent_scale_error():
-    tonic = 'c'
-    tonality = 'minor'
-    error_message = f'This scale wasn not implemented yet. You need to try one of these {SCALES.keys()}'
-    with raises(KeyError) as error:
         scale(tonic, tonality)
     assert error.value.args[0] == error_message
 

@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "music_py"}]
 
 [tool.poetry.scripts]
-scales = "music_py.cli:app"
+music-py = "music_py.cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.9"

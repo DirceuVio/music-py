@@ -2,7 +2,7 @@ from rich.console import Console
 from rich.table import Table
 from typer import Argument, Typer
 
-from music_py.scale import scale
+from music_py.scales import scale
 
 app = Typer()
 

@@ -1,5 +1,5 @@
 NOTES = 'C C# D D# E F F# G G# A A# B'.split()
-SCALES = {'major': (0, 2, 4, 5, 7, 9, 11)}
+SCALES = {'major': (0, 2, 4, 5, 7, 9, 11), 'minor': (0, 2, 3, 5, 7, 8, 10)}
 
 
 def scale(tonic: str, tonality: str) -> dict[str : list[str]]:
